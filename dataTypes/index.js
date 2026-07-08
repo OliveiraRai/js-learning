@@ -1,5 +1,5 @@
 let x = "pizza"
-let y = 90
+let y;
 let z = "pizza"
 
 x = Number(x)
@@ -26,3 +26,17 @@ document.getElementById("p3").textContent = `${z} ${typeof(z)}`
 // apenas se a String tenha valor diferente de ""; e o tipo
 // retorna 'boolean', como esperado.
 
+// Ao converter uma variável não inicializada em String,
+// seu valor retorna undefined e seu tipo agora é String.
+
+// RESUMO
+
+// Se uma variável não Number for convertida em Number, ela 
+// retornará NaN sempre que o valor for letras ou vazia.
+
+// Se uma variável não String for convertida em String, ela
+// retornará undefined sempre que não tiver sido inicializada.
+
+// Se uma variável não Boolean for convertida em Boolean, ela
+// retornará true sempre que houver valor.
+    // é retornado false para os seguintes valores:
