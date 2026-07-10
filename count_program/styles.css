@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#display{
+    font-size: 100px;
+}
+#add, #reset, #subtract{
+    padding: 10px 20px;
+    border-radius: 0;
+    border: none;
+    background-color: hsl(180, 60%, 40%);
+    color: hsl(0, 0%, 95%);
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+:is(#add, #reset, #subtract):hover{
+   background-color: hsl(180, 60%, 35%);
+}
