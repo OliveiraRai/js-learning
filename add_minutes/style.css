@@ -1,0 +1,62 @@
+html, body, *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(115, 14%, 16%);
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(240, 240, 240);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 20px;
+}
+#switchButton{
+    padding: 5px 20px;
+    cursor: pointer;
+    border-radius: 0;
+    border: none;
+    background-color: white;
+    transition: background-color 0.25s;
+}
+#switchButton:hover{
+    background-color: hsl(0, 0%, 83%);
+}
+.content{
+    display: flex;
+    height: calc(100vh - 57px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+#myH2{
+    font-size: 120px;
+}
+.input-wrapper{
+    position: relative;
+}
+#myInput{
+    width: 300px;
+    padding: 10px;
+    outline: none;
+}
+#myButton{
+    position: absolute;
+    top: 20%;
+    right: 0;
+    transform: translate(-20%, 0);
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 0;
+    outline: 1px solid;
+}
+@media (max-width: 768px){
+    .navbar {
+        flex-direction: column;
+    }
+}
